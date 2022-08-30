@@ -6,7 +6,9 @@ Presented at a user conference in 2018.
 [![IMAGE_ALT](https://img.youtube.com/vi/OTVENGvS72A/2.jpg)](https://www.youtube.com/watch?v=OTVENGvS72A)
 
 
-One of the key design decision in my NLP approach is to use a Graph Database as the underlying information storage. Graph technology is an effective choice when you don't know in advance the type of queries and "joins" that you have to support. That's usually the case in all businesses where different data are interconnected.
+One of the key design decision in my NLP approach is to use a Graph Database as the underlying information storage. I have used [Dgraph](https:///dgraph.io) as their query language (DQL) was what I needed for this project.
+
+Graph technology is an effective choice when you don't know in advance the type of queries and "joins" that you have to support. That's usually the case in all businesses where different data are interconnected.
 
 Here is an example of the conversational query using airline data about flight operations.
 
