@@ -1,3 +1,8 @@
+## Links
+[LinkedIn profile](https://www.linkedin.com/in/raphael-derbier-572423/)
+
+[Resume](/assets/Raphael-Derbier-Resume-2022-v2.pdf)
+
 ##  work on Natural Language Processing
 
 I have used a mix of NLP techniques and a concept of ontology to create a "Conversational" user interface where people can just ask questions about their data.
@@ -39,4 +44,14 @@ The presentation also contained a "brief history of enterprise software architec
 
 ## work on Serverless architecture
 
-...
+In 2020, our group has been asked to create an application that could help companies to get back to office safely given the COVID pandemic. We prototyped a working solution in 2 weeks and we could start offering it as a SaaS service with a companion mobile app (PWA) in 3 months. I was in charge of the requirements, design and architecture of the applicative part. We wanted to offer the solution for free. So it had to be very cost effective, production ready, able to scale. The solution is based on a case management engine and we have added a client application and a contact tracing capability which I created based on AWS stack : S3, Route53, CloudFront, API Gateway, Lambda functions and DynamoDB plus the necessary architecture for security (VPCs, security groups ...).
+![IMAGE_ALT](/assets/GatherSmart.png)
+
+I reused the same architecture for a business notification solution.
+This time I have added a push notification capability using SNS and some logic in lambda triggered by DynamoDB streams.
+
+DynamoDB keys are used in way to have a multi-tenant solution based on the user organization. The organization info is derived by a lambda custom authorizer on the API (serverless framework) which decode the JWT token of the user after login.
+
+The final result is an extremely cheap solution to start with (<5$ per month !), scallable and which pass all our internal security tests (pen testing, port scanning ...).
+
+It took 9 months from ideation to production. Given all the interactions you have to have in large companies (marketing, legal, cloud operations, ...), I can say it's really fast.
