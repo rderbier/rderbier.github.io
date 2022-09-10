@@ -1,7 +1,7 @@
 ## About me
 [LinkedIn profile](https://www.linkedin.com/in/raphael-derbier-572423/)
 
-[Resume](/assets/Raphael-Derbier-Resume-2022-v3.pdf)
+[Resume](/assets/Raphael-Derbier-Resume-2022.pdf)
 
 ##  work on Natural Language Processing
 
