@@ -1,5 +1,5 @@
 ## About me
-[LinkedIn profile](https://www.linkedin.com/in/raphael-derbier-572423/)
+[LinkedIn profile](https://www.linkedin.com/in/raphael-derbier)
 
 [Resume](/assets/Raphael-Derbier-Resume-2022.pdf)
 
