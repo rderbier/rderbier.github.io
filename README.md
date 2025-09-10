@@ -1,25 +1,26 @@
 ## About me
 [LinkedIn profile](https://www.linkedin.com/in/raphael-derbier)
 
-[Resume](/assets/Raphael-Derbier-Resume-2022.pdf)
+[Resume](/assets/Raphael-Derbier-Resume.pdf)
 
-##  work on Natural Language Processing
+## Natural Language Processing (NLP) & Conversational Interfaces
 
-I have used a mix of NLP techniques and a concept of ontology to create a "Conversational" user interface where people can just ask questions about their data.
-Presented at a user conference in 2018.
+### Graph-Powered Conversational Query Engine
+In 2018, I have used a mix of NLP techniques and a concept of ontology to create a "Conversational" user interface where people can just ask questions about their data in plain english. A pre-LLM project !
 
-[![IMAGE_ALT](https://img.youtube.com/vi/OTVENGvS72A/2.jpg)](https://www.youtube.com/watch?v=OTVENGvS72A)
+- Developed a **natural language interface** for querying complex datasets, combining **NLP techniques** and **ontology-based graph databases**.
+- **Key innovation**: Used **[Dgraph](https://dgraph.io/)** for its flexible query language (DQL), enabling dynamic queries of interconnected business data.
+- **Use case**: Demonstrated with airline flight operations data, allowing users to ask questions conversationally.
+- **Presented at a user conference in 2018**.
+
+📺 **[Demo: Conversational Query Engine](https://youtu.be/OTVENGvS72A)**
+📺 **[Demo: Airline Data Use Case](https://youtu.be/VnkoLH0v3DM)**
+
+> Graph technology is an effective choice when you don't know in advance the type of queries and "joins" that you have to support. That's usually the case in all businesses where different data are interconnected.
 
 
-One of the key design decision in my NLP approach is to use a Graph Database as the underlying information storage. I have used [Dgraph](https:///dgraph.io) as their query language (DQL) was what I needed for this project.
 
-Graph technology is an effective choice when you don't know in advance the type of queries and "joins" that you have to support. That's usually the case in all businesses where different data are interconnected.
-
-Here is an example of the conversational query using airline data about flight operations.
-
-[![IMAGE_ALT](https://img.youtube.com/vi/VnkoLH0v3DM/2.jpg)](https://youtu.be/VnkoLH0v3DM)
-
-## work on Augmented Reality with Hololens
+## Augmented Reality (AR) with Microsoft HoloLens
 
 ### The Bike challenge demo
 
@@ -34,7 +35,9 @@ A quick explainer of the type of data that we have included in the demo:
 [![IMAGE_ALT](https://img.youtube.com/vi/vuGVqoXPMYM/3.jpg)](
 https://youtu.be/vuGVqoXPMYM)
 
-By implementing this first innovation project I realized that using enterprise data in the context of Augmented Reality has some very valid uses cases. The following is the introduction of the presentation I gave with a friend of mine at Global XR conference in 2020 on this subject.
+By implementing this first innovation project I realized that using enterprise data in the context of Augmented Reality has some very valid uses cases. 
+
+The following is the introduction of the presentation I gave with a friend of mine at Global XR conference in 2020 on this subject.
 
 [![IMAGE_ALT](https://img.youtube.com/vi/sfKdBPEMWTs/3.jpg)](https://youtu.be/sfKdBPEMWTs)
 
@@ -42,16 +45,19 @@ The presentation also contained a "brief history of enterprise software architec
 
 [![IMAGE_ALT](https://img.youtube.com/vi/MmUKlYyrHA4/3.jpg)](https://youtu.be/MmUKlYyrHA4)
 
-## work on Serverless architecture
+## Serverless Architecture: Scalable, Cost-Effective Solutions
 
-In 2020, our group has been asked to create an application that could help companies to get back to office safely given the COVID pandemic. We prototyped a working solution in 2 weeks and we could start offering it as a SaaS service with a companion mobile app (PWA) in 3 months. I was in charge of the requirements, design and architecture of the applicative part. We wanted to offer the solution for free. So it had to be very cost effective, production ready, able to scale. The solution is based on a case management engine and we have added a client application and a contact tracing capability which I created based on AWS stack : S3, Route53, CloudFront, API Gateway, Lambda functions and DynamoDB plus the necessary architecture for security (VPCs, security groups ...).
+
+### GatherSmart: Safe Return-to-Office SaaS (2020)
+In 2020, our group has been asked to create an application that could help companies to get back to office safely given the COVID pandemic. 
+- **Challenge**: Build a **COVID-safe office reentry solution** in **2 weeks** (prototype) and **3 months** (production SaaS + PWA).
+- **Role**: Led **requirements, design, and architecture** for a **case management engine** with **contact tracing**.
+- **Tech stack**: AWS (**S3, Route53, CloudFront, API Gateway, Lambda, DynamoDB**), with **VPCs and security groups** for compliance.
+- **Result**: A **multi-tenant, scalable solution** costing **< $5/month** to start, passing all security tests (pen testing, port scanning).
+
 ![IMAGE_ALT](/assets/GatherSmart.png)
 
-I reused the same architecture for a business notification solution.
-This time I have added a push notification capability using SNS and some logic in lambda triggered by DynamoDB streams.
+### Business Notification System
+- Reused the **serverless architecture** to build a **push notification system** using **SNS** and **DynamoDB streams**.
+- **Multi-tenancy**: Achieved via **custom Lambda authorizers** decoding JWT tokens for user organization context.
 
-DynamoDB keys are used in way to have a multi-tenant solution based on the user organization. The organization info is derived by a lambda custom authorizer on the API (serverless framework) which decode the JWT token of the user after login.
-
-The final result is an extremely cheap solution to start with (<5$ per month !), scallable and which pass all our internal security tests (pen testing, port scanning ...).
-
-It took 9 months from ideation to production. Given all the interactions you have to have in large companies (marketing, legal, cloud operations, ...), I can say it's really fast.
