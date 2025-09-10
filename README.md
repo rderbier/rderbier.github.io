@@ -3,6 +3,51 @@
 
 [Resume](/assets/Raphael-Derbier-Resume.pdf)
 
+## 📝 Recent Publications & Talks
+
+### LLM Function Calling, Agents and Graph database
+- **[Use LLM Function Calling (Tools) in Modus](https://www.youtube.com/watch?v=afFk7JzSIm0)**
+  *Exploring how to integrate LLM "tools" (function calling) to build dynamic, AI-powered workflows.*
+
+- **[AI-Driven Data Classification Using LLM (GPT) in Dgraph](https://www.youtube.com/watch?v=WHH4OZiEB-g)**
+  *Leveraging LLMs to automate data classification and enrich knowledge graphs.*
+
+- **[Add OpenAI, Mistral, or Hugging Face Embeddings to Your Knowledge Graph](https://www.youtube.com/watch?v=KOXR2v4VyYU)**
+  *Practical guide to enhancing knowledge graphs with state-of-the-art embeddings for semantic search and classification.*
+
+- **[Use OpenAI Embeddings in Dgraph for Auto-Classification](https://hypermode.com/blog/ai-classification)**
+  *How embeddings and Dgraph enable automated, scalable data classification.*
+
+---
+
+### Knowledge Graphs & AI Use Cases
+- **[A Taxonomy of Knowledge Graphs for AI Use Cases](https://hypermode.com/blog/smarter-ai-knowledge-graphs)**
+  *Breaking down how knowledge graphs power AI applications, from search to recommendation systems.*
+
+---
+
+### Case Studies & Customer Projects
+Public case studies of projects I have implemented :
+- **[AgroPatterns: AI for Agriculture](https://hypermode.com/blog/hypermode-agropatterns)**
+  *How we built AI-driven solutions for agricultural data analysis and decision-making.*
+
+- **[How Pick Your Packer Built AI-Powered Search with Hypermode](https://hypermode.com/blog/how-pick-your-packer-built-ai-powered-search-with-hypermode)**
+  *Case study on implementing AI-enhanced search for logistics and supply chain optimization.*
+
+---
+
+### Dgraph Deep Dives
+- **[OLAP Data Analysis with Dgraph: A Practical Guide](https://hypermode.com/blog/analytics-olap-in-dgraph)**
+  *Using Dgraph for analytical queries and real-time data exploration.*
+
+- **[Rapid Application Development with GraphQL, Dgraph, and React.js](https://www.youtube.com/watch?v=2sMhBxd-OQg)**
+  *Building full-stack apps faster with modern graph technologies.*
+
+- **[Rapid App Dev: From Zero to Production](https://hypermode.com/blog/rapid-app-dev)**
+  *Lessons learned from accelerating development cycles with Dgraph and GraphQL.*
+
+---
+
 ## Natural Language Processing (NLP) & Conversational Interfaces
 
 ### Graph-Powered Conversational Query Engine
